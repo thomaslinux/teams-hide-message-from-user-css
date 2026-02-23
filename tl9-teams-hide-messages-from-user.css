@@ -1,0 +1,23 @@
+/* ==UserStyle==
+@name         tl9 teams hide messages from user
+@version      20260223.15.34
+@namespace    ?
+@description  hide a message from a user in Teams
+@license      No License
+==/UserStyle== */
+
+@-moz-document domain("teams.cloud.microsoft") {
+/* hide message content from user LASTNAME*/
+div[class*="fui-ChatMessage"]:has(img[src*="LASTNAME"]) div[data-message-content],
+empty
+{
+    display:none;
+}
+
+/*show message from user LASTNAME on hover*/
+div[class*="fui-ChatMessage"]:has(img[src*="LASTNAME"]):hover div[data-message-content],
+empty {
+ display:unset;   
+}
+
+}
