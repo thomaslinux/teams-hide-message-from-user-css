@@ -21,7 +21,7 @@ div[class*="fui-ChatMessage"]:has(img[src*="LASTNAME"]) div[data-message-content
 div[class*="fui-ChatMessage"]:has(img[src*="LASTNAME"]):hover div[data-message-content],
 ```
 
-replace LASTNAME with the LASTNAME of the users to hide
+replace LASTNAME with the LASTNAME of the user to hide
 
 ## Add another user to hide
 
@@ -34,6 +34,10 @@ div[class*="fui-ChatMessage"]:has(img[src*="LASTNAME2"]) div[data-message-conten
 div[class*="fui-ChatMessage"]:has(img[src*="LASTNAME"]):hover div[data-message-content],
 div[class*="fui-ChatMessage"]:has(img[src*="LASTNAME2"]):hover div[data-message-content],
 ```
+
+replace LASTNAME2 with the LASTNAME of the second user to hide
+
+**Duplicate the lines as many times as there are users to hide**
 
 # TODO :
 
