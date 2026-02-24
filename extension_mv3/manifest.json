@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "User Message Hider",
+  "version": "1.0",
+  "permissions": ["storage", "activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://teams.cloud.microsoft/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
