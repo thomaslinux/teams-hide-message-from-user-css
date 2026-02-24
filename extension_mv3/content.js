@@ -1,3 +1,4 @@
+// Injects the CSS to hide the messages
 chrome.storage.sync.get(['hiddenUsers', 'isEnabled'], (data) => {
   if (data.isEnabled) {
     const hiddenUsers = data.hiddenUsers || [];
