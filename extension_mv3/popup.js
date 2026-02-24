@@ -1,3 +1,4 @@
+// Handles user input from the popup interface
 document.addEventListener('DOMContentLoaded', () => {
   const usernameInput = document.getElementById('username');
   const addUserButton = document.getElementById('addUser');
